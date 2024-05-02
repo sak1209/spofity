@@ -1,0 +1,205 @@
+body{
+    background-color: black;
+    color: white;
+}
+.invert{
+    filter: invert(1);
+}
+.logo{
+    padding-left: 7px;
+    padding-top: 4px;
+}
+.cont{
+    display: flex;
+    position: relative;
+}
+.cont div h1{
+    font-weight: bold;
+    font-size: 50px;
+    position: absolute;
+    top: 80%;
+    left: 40%;
+display: flex;
+}
+.cont div h2{
+    font-weight: bold;
+    font-size: 53px;
+    position: absolute;
+    top: 200%;
+    left: 45%;
+    display: flex;
+
+}
+.email{
+    position: absolute;
+    top: 410%;
+    font-size: 20px;
+    left: 40.5%;
+display: flex;
+}
+.data{
+    position: absolute;
+    top: 440%;
+    font-size: 19px;
+    left: 40%;
+display: flex;
+color: black;
+border:2px solid skyblue;
+margin: 6px;
+}
+.cont div input{
+    width: 320px;
+    height: 30px;
+    padding: 8px;
+}
+.linkn{
+    color: skyblue;
+    position: absolute;
+    top: 560%;
+    font-size: 17px;
+    left: 40.5%;
+display: flex;
+}
+.btn button{
+    font-weight: bold;
+    font-size: 21px;
+    position: absolute;
+    top: 625%;
+    left: 40%;
+    display: flex;
+    background-color: rgb(14, 170, 209);
+    border-radius: 27px;
+    padding-right: 154px;
+    padding-left: 154px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    }
+
+.horizontal-line {
+    width: 133px;
+    height: 2px;
+    top: 724%;
+    left: 41%;
+    position: absolute;
+    margin: 20px 0;
+}
+.horizontal {
+    width: 132px;
+    height: 2px;
+    top: 724%;
+    left: 57.50%;
+    position: absolute;
+    margin: 20px 0;
+    
+}
+.or{
+    position: absolute;
+    top: 739%;
+    font-size: 24px;
+    left: 54.05%;
+    display: flex;
+
+}
+.mix{
+    display: flex;
+}
+.gtn button{
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    top: 830%;
+    left: 40%;
+    display: flex;
+    background-color: black;
+    border-radius: 27px;
+    border-color: #A7A7A7;
+    padding-right: 63px;
+    padding-left: 63px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+.sigo{
+    padding: 6px;
+    display: flex;
+}
+.ftn button{
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    top: 980%;
+    left: 40%;
+    display: flex;
+    background-color: black;
+    border-radius: 27px;
+    border-color: #A7A7A7;
+    padding-right: 53px;
+    padding-left: 53px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+.sifo{
+    padding: 6px;
+    display: flex;
+}
+    
+.atn button{
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    top: 1130%;
+    left: 40%;
+    display: flex;
+    background-color: black;
+    border-radius: 27px;
+    border-color: #A7A7A7;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-top: 13px;
+    padding-bottom: 4px;
+    color: white;
+}
+.siao{
+    padding: 4px;
+    display: flex;
+}
+
+.atn a{
+    text-decoration: none;
+    color: white;
+}
+.ftn a{
+    text-decoration: none;
+    color: white;
+}
+.gtn a{
+    text-decoration: none;
+    color: white;
+}
+.zon {
+    width: 347PX;
+    /* height: 0PX; */
+    top: 1240%;
+    left: 40.50%;
+    position: absolute;
+    margin: 10PX 0;
+    color: #8a8a8a;
+}
+.already{
+        position: absolute;
+        top: 1285%;
+        font-size: 20px;
+        left: 42%;
+    display: flex;
+
+    }
+    .here{
+        /* font-weight: bold; */
+        color: white;
+    }
+    .accoun{
+        color: #A7A7A7;
+    }
+    
+    

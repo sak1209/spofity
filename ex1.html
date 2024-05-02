@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <audio id="currentSong"></audio>
+
+<script>
+    const audioPath = '/songs/ANIMAL_SATRANGA(Song)-2.mp3'; // Path to your audio file
+    const currentSong = document.getElementById('currentSong');
+    currentSong.src = audioPath;
+    currentSong.play(); // Optionally play the audio automatically
+</script>
+
+</body>
+</html>

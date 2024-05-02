@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Web</title>
+    <link rel="stylesheet" href="s.css">
+    <link rel="stylesheet" href="u.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="home bg-grey rounded m-1 p-1">
+
+                <div class="crosslogo">
+                    <div class="logo"><img width="110" class="invert" src="logo.svg" alt=""></div>
+                    <img class="cross invert" src="cross.svg" alt="">
+                </div>
+                <ul>
+                    <li><img class="invert homeg" src="home.svg" alt="home">Home</li>
+                    <li><img class="invert searchg" src="search.svg" alt="home">Search</li>
+                </ul>
+            </div>
+
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading"> <img class="invert" src="playlist.svg" alt="">
+                    <h2>Your Library</h2>
+                </div>
+                <audio id="currentSong"></audio>
+                <div class="songList">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety & Privacy
+                                Center</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy
+                                Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About
+                                Ads</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <div class="navcont">
+                        <img class=" invert humburgercontain" src="humburger.svg" alt="">
+                        <svg class="diff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="#ffffff"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg class="diff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#ffffff"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="signup"><a href="http://127.0.0.1:5501/signup.html">Sign Up</a></button>
+                    <button class="login">Login</button>
+                </div>
+            </div>
+            <div class="playlist">
+                <h1 class="spoplay">Spotify Playlists</h1>
+                <div class="cardcontainer">
+                    <div class="card">
+                        <div class="circle-container">
+                            <svg class="pic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24" color="#000000" fill="none">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <img src="https://i.scdn.co/image/ab67706f0000000281722192322800ae99c2ed06" alt="">
+                        <h3>Sleep</h3>
+                        <p>
+                            Gentle Ambient piano to help you fall asleep.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="circle-container">
+                            <svg class="pic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24" color="#000000" fill="none">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+
+                        <img src="https://i.scdn.co/image/ab67706f000000028998614b3281e12596844039" alt="">
+                        <h3>Night Rain</h3>
+                        <p>
+                            Sleep with sounds of pouring rain and occasional rolling thunder.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="circle-container">
+                            <svg class="pic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24" color="#000000" fill="none">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f000000027e858e4098c8a256ca51d770" alt="">
+                        <h3>Lofi Songs</h3>
+                        <p>
+                            Instrumental beats for a restful night's sleep.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="circle-container">
+                            <svg class="pic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24" color="#000000" fill="none">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f000000027da11e4e02c0da2f543ea20f" alt="">
+                        <h3>Lofi Love</h3>
+                        <p>
+                            Soothing, minimalist ambient for deep sleep.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="circle-container">
+                            <svg class="pic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24" color="#000000" fill="none">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002e3c324443862abeb46220f00" alt="">
+                        <h3>White Noise 10 Hours</h3>
+                        <p>
+                            Ten hours long continuous white noise to help you relax and let go.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="circle-container">
+                            <svg class="pic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24" color="#000000" fill="none">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f000000020fe5f745fe47eb1517de0b84" alt="">
+                        <h3>Jazz For Sleep</h3>
+                        <p>
+                            Let these calm Jazz tracks lull you to sleep.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="circle-container">
+                            <svg class="pic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24" color="#000000" fill="none">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002fbf8dcb03962d651152e64a4" alt="">
+                        <h3>Brown Noise</h3>
+                        <p>
+                            Soothing, low frequencies for relaxation, meditation or sleep.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="circle-container">
+                            <svg class="pic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24" color="#000000" fill="none">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f00000002d9e758880a1effe4f5d62062" alt="">
+                        <h3>NightStorms</h3>
+                        <p>
+                            Hours of comforting sounds of thunder and rain.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="circle-container">
+                            <svg class="pic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24" color="#000000" fill="none">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f000000023a6b28e001177d865cbbc073" alt="">
+                        <h3>Pink Noise 10 Hours</h3>
+                        <p>
+                            The perfect frequency for sleep or study – science tested, listener approved.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="circle-container">
+                            <svg class="pic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24" color="#000000" fill="none">
+                                <path
+                                    d="M18.8906 12.846C18.5371 14.189 16.8667 15.138 13.5257 17.0361C10.296 18.8709 8.6812 19.7884 7.37983 19.4196C6.8418 19.2671 6.35159 18.9776 5.95624 18.5787C5 17.6139 5 15.7426 5 12C5 8.2574 5 6.3861 5.95624 5.42132C6.35159 5.02245 6.8418 4.73288 7.37983 4.58042C8.6812 4.21165 10.296 5.12907 13.5257 6.96393C16.8667 8.86197 18.5371 9.811 18.8906 11.154C19.0365 11.7084 19.0365 12.2916 18.8906 12.846Z"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67706f0000000275da071e376f9e6bf9c05713" alt="">
+                        <h3>Dreamy Forest music</h3>
+                        <p>
+                            Wander into the magical mix of music, water, birds, and calmness.
+                        </p>
+                    </div>
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="gola"></div>
+                    </div>
+                    <div class="symbol">
+                        <div class="songinfo"></div>
+
+                        <div class="songbuttons">
+                            <img id="prev" src="previous.svg" alt="">
+                            <img id="play" src="play.svg" alt="">
+                            <img id="next" src="next.svg" alt="">
+                        </div>
+                            <div class="timevol">
+                                <div class="timvolbar">
+                                    <div class="songtime"></div>
+                                    <div class="volumebar">
+                                        <div class="volumeseek">
+                                            <div class="volumegola"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="volume" class="invert">
+                                    <img id="volumepic" src="volume.svg" alt="">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+                <div class="contact">
+                    <div class="conclass">
+                        <div class="company">
+                            <h4>Company</h4>
+                            <div><a href="https://www.spotify.com/in-en/about-us/contact/"><span>About</span></a></div>
+                            <div><a href="https://www.lifeatspotify.com/"><span>Jobs</span></a></div>
+                            <div><a href="https://newsroom.spotify.com/"><span>For the Record</span></a></div>
+
+                        </div>
+                        <div class="communities">
+                            <h4>Communities</h4>
+                            <div><a href="https://artists.spotify.com/"><span>For Artists</span></a></div>
+                            <div><a href="https://developer.spotify.com/"><span>Developers</span></a></div>
+                            <div><a href="https://ads.spotify.com/"><span>Advertising</span></a></div>
+                            <div><a href="https://investors.spotify.com/"><span>Investors</span></a></div>
+                            <div><a href="https://spotifyforvendors.com/"><span>Vendors</span></a></div>
+                        </div>
+                        <div class="useful">
+                            <h4>Useful links</h4>
+                            <div><a href="https://support.spotify.com/"><span>Support</span></a></div>
+                            <div><a href="https://www.spotify.com/in-en/free/"><span>Free Mobile App</span></a></div>
+                        </div>
+                        <div class="plans">
+                            <h4>Spotify Plans</h4>
+                            <div><a href="https://www.spotify.com/in-en/premium"><span>Premium Individual</span></a>
+                            </div>
+                            <div><a href="https://www.spotify.com/in-en/duo"><span>Premium Duo</span></a></div>
+                            <div><a href="https://www.spotify.com/in-en/family"><span>Premium Family</span></a></div>
+                            <div><a href="https://www.spotify.com/in-en/student"><span>Premium Student</span></a></div>
+                            <div><a href="https://www.spotify.com/in-en/free"><span>Spotify Free</span></a></div>
+                        </div>
+                        <div><img class="invert" src="insta.svg" alt="">
+                            <img class="invert" src="twitter.svg" alt="">
+                            <img class="invert" src="facebook.svg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="java.js"></script>
+</body>
+
+</html>

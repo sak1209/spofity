@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.invert{
+    filter: invert(1);
+}
+.phone{
+    position: relative;
+}
+.number{
+    font-weight: bold;
+    font-size: 22px;
+    position: absolute;
+    top: 185%;
+    left: 40%;
+display: flex;
+}
+.data{
+    font-weight: bold;
+    font-size: 22px;
+    position: absolute;
+    top: 220%;
+    left: 33%;
+display: flex;
+}
+.datan{
+    font-weight: bold;
+    font-size: 22px;
+    position: absolute;
+    top: 220%;
+    left: 38%;
+display: flex;
+}
+.data input{
+    width: 35px;
+    height: 40px;
+    margin: 10px;
+ padding: 4px;
+ border:2px solid yellow;
+}
+.enter div{
+    gap: 4px;
+    display: flex;
+color: black;
+
+}
+.datan input{
+    width: 330px;
+    height: 40px;
+    margin: 10px;
+   padding: 4px;
+   border:2px solid yellow;
+}
+.logo{
+    padding-left: 8px;
+    padding-top: 6px;
+}
+.btn button{
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 380%;
+    left: 33.80%;
+display: flex;
+background-color: rgb(14, 170, 209);;
+border-radius:27px ;
+padding-right: 19px;
+padding-left: 19px;
+padding-top: 13px;
+padding-bottom: 13px;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+}

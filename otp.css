@@ -1,0 +1,73 @@
+.logo{
+    padding-left: 8px;
+    padding-top: 6px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.invert{
+    filter: invert(1);
+}
+.otp{
+position: relative;
+}
+.code{
+    font-weight: bold;
+    font-size: 22px;
+    position: absolute;
+    top: 185%;
+    left: 40%;
+display: flex;
+}
+.data{
+    font-weight: bold;
+    font-size: 22px;
+    position: absolute;
+    top: 235%;
+    left: 25%;
+display: flex;
+}
+.data input{
+    width: 520px;
+    height: 40px;
+    margin: 10px;
+ padding: 4px;
+ border:2px solid yellow;
+}
+.btn button{
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 450%;
+    left: 61.80%;
+display: flex;
+background-color: rgb(14, 170, 209);
+border-radius:27px ;
+padding-right: 19px;
+padding-left: 19px;
+padding-top: 13px;
+padding-bottom: 13px;
+}
+.new{
+    display: flex;
+    gap: 100px;
+}
+.getcode{
+    font-size: 18px;
+    position: absolute;
+    top: 488%;
+    left: 26%;
+display: flex;
+}
+.digit{
+    font-size: 19px;
+    position: absolute;
+    top: 650%;
+    left: 34.50%;
+display: flex;
+}
